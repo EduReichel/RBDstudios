@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>RBD-Proyectos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles_proyectos.css">
+</head>
+<body id="grid">
+    <header class="contenedor-header">
+        <h2>RBD ESTUDIO</h2>
+        <hr>
+        <div class="enlaces">
+            <div class="enlaces-web">
+                <ul>
+                    <a href="index.html">Inicio</a>
+                    <a id="formato" href="proyectos.html">Proyectos</a>
+                    <a id="formato" href="servicios.html">Servicios</a>
+                    <a id="formato" href="contacto.html">Contacto</a>
+                </ul>
+            </div>
+            <div class="enlaces-redes">
+                <nav class="img-little" >
+                    <a href="#" target="_blank">
+                        <img src="img/img_facebook.png"  alt="facebook" class="img-little"/>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/img_instagram.png"  alt="instagram" class="img-little"/>
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/img_whatsapp.png"  alt="whatsapp" class="img-little"/>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-proyectos">
+        <div class="titulos">
+            <h1>PROYECTOS RECIENTES</h1>
+            <h3>Nuestras Creaciones</h3>
+        </div>
+        <div class="img-proyectos">
+            <div class="proyecto-modelo proyecto-posicion proyecto-museo">
+                <img id="principal" class="tamaño-imagen-par" src="./img/proyecto_artMusem.jpg" alt="museo">
+                <div class="imagenes-chicas">
+                    <img id="1" src="img/artMuseum/5.jpg" alt="1" onclick="changeImage()">
+                    <img id="2" src="img/artMuseum/6.jpg" alt="2" onclick="changeImage()">
+                    <img id="3" src="img/artMuseum/7.jpg" alt="3" onclick="changeImage()">
+                    <img id="4" src="img/artMuseum/8.jpg" alt="4" onclick="changeImage()">
+                    <img id="5" src="img/artMuseum/8.jpg" alt="5" onclick="changeImage()">
+
+                    <script type="text/javascript" src="js/changeImage.js"></script>
+
+                </div>
+                <h4>Art Museum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio beatae error qui eligendi illo autem architecto quas, assumenda aliquam odit velit recusandae corrupti. Impedit corporis iusto, harum ad soluta omnis?</p>
+            </div>
+            <div class="proyecto-modelo proyecto-posicion proyecto-barrio">
+                <img class="tamaño-imagen-impar" src="./img/proyecto_Barrio31.jpg" alt="viviendas">
+                <h4>Viviendas Barrio 31</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis eius harum blanditiis maxime cum, deleniti aliquid non eos deserunt expedita reiciendis doloremque quo error! Quaerat asperiores aliquam harum atque molestiae!</p>
+            </div>
+            <div class="proyecto-modelo proyecto-posicion proyecto-diagonalSur">
+                <img class="tamaño-imagen-par" src="./img/proyecto-diagonalsur.jpg" alt="diagonal sur">
+                <h4>Diagonal Sur, CABA</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis eius harum blanditiis maxime cum, deleniti aliquid non eos deserunt expedita reiciendis doloremque quo error! Quaerat asperiores aliquam harum atque molestiae!</p>
+            </div>
+            <div class="proyecto-modelo proyecto-posicion proyecto-museoTandil">
+                <img class="tamaño-imagen-impar" src="./img/proyecto-museotandil.jpg" alt="Museo Tandil">
+                <h4>Museo Tandil</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis eius harum blanditiis maxime cum, deleniti aliquid non eos deserunt expedita reiciendis doloremque quo error! Quaerat asperiores aliquam harum atque molestiae!</p>
+            </div>
+        </div>
+    </div>
+
+   <hr class="proyectos">
+    <footer class="contenedor-footer">
+        <div>
+            <p>@2020 RBD Estudio</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

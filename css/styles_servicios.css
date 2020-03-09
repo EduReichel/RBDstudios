@@ -1,0 +1,70 @@
+.contenedor-servicios .titulo-servicios {
+  background-image: url(../img/rbd_puente.jpg);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 25px;
+  filter: grayscale(1); }
+
+p {
+  padding-right: 50px;
+  width: 750px; }
+
+.contenedor-servicios .titulo-servicios p {
+  margin-top: 30px; }
+
+.contenedor-servicios .seccion-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 80px; }
+
+.contenedor-servicios .servicio {
+  display: flex;
+  margin-top: 100px; }
+
+.contenedor-servicios .texto-servicio {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center; }
+
+p {
+  padding: 30px 100px; }
+
+#imagen-servicio {
+  transition: transform .6s; }
+
+#video {
+  transition: transform .9s; }
+
+.fondo {
+  background-color: #d1d2d6;
+  height: 300px;
+  width: 1200px;
+  overflow: hidden;
+  color: black; }
+
+.servicio img {
+  width: 600px; }
+
+.servicio video {
+  width: 600px; }
+
+.multimedia {
+  background-color: black;
+  filter: grayscale(0.7); }
+
+/*Footer*/
+.proyectos {
+  height: 1px;
+  background-color: white;
+  clear: both; }

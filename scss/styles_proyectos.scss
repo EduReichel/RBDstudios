@@ -1,0 +1,71 @@
+/*PROYECTOS*/
+.img-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .imagenes-chicas{
+        margin-top: 15px;}
+    img {
+        width: 90px;
+        height: 80px;
+        margin-left: 10px;
+    }
+.proyecto-modelo {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    margin-top: 100px;
+    padding-bottom: 30px;
+ }
+
+ .color{
+     background-color: #191919;
+ }
+ .tamaño-imagen-par {
+     height: 400px;
+     width: 600px;
+     transition: transform .3s;
+     filter: grayscale(0.7);
+ }
+ 
+ .tamaño-imagen-impar {
+     height: 400px;
+     width: 600px;
+     transition: transform .3s;
+     filter: grayscale(0.7);
+ }
+ 
+ .contenedor-proyectos {
+     margin-top: 50px;
+ }
+ 
+ .contenedor-proyectos .titulos {
+     background-image: url(../img/rbd_city.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position-y: center;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ 
+ .contenedor-proyectos .img-proyectos .proyecto-barrio {
+     margin-left: 20px;
+ }
+ 
+ .contenedor-proyectos .img-proyectos .proyecto-museoTandil {
+     margin-left: 20px;
+ }
+ 
+ /*FOOTER*/
+ .proyectos{
+    height: 1px;
+    background-color: white;
+     clear: both;
+ }
