@@ -1,0 +1,8 @@
+.contenedor-contacto .caja {
+  background-image: url(../img/error.jpg);
+  filter: grayscale(1);
+  color: black;
+  font-weight: 900; }
+
+h4, p {
+  color: white; }

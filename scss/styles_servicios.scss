@@ -74,6 +74,12 @@
 
  /*Footer*/
 
+ .footer-servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+ }
  .proyectos{
     height: 1px;
     background-color: white;

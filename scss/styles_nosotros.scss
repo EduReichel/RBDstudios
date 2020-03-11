@@ -1,0 +1,29 @@
+body{
+    height: 100%;
+}
+.contenedor .titulos {
+    background-image: url(../img/rbd_nosotrosHome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.7);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
+    .valores{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;}
+    .imagenValores{
+        margin-top: 30px;
+        margin-bottom: 15px;
+        filter: grayscale(0.5);}
