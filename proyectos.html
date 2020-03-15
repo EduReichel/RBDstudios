@@ -47,58 +47,113 @@
         </div>
         <div class="img-proyectos">
             <div class="proyecto-modelo proyecto-posicion proyecto-museo">
-                <img id="principal" class="tamaño-imagen-par" src="./img/proyecto_artMusem.jpg" alt="museo">
-                <div class="imagenes-chicas">
-                    <img id="1" src="img/artMuseum/5.jpg" alt="1" onclick="changeImage()">
-                    <img id="2" src="img/artMuseum/6.jpg" alt="2" onclick="changeImage()">
-                    <img id="3" src="img/artMuseum/7.jpg" alt="3" onclick="changeImage()">
-                    <img id="4" src="img/artMuseum/8.jpg" alt="4" onclick="changeImage()">
-                 
-
-                    <script type="text/javascript" src="js/changeImage.js"></script>
-
+                <div class="panel-principal">
+                    <img id="principal_museo" class="museo tamaño-imagen-par" src="./img/proyecto_artMusem.jpg" alt="museo">
                 </div>
+                <div class="imagenes-chicas museo">
+                    <img id="1" src="img/artMuseum/5.jpg" alt="1">
+                    <img id="2" src="img/artMuseum/6.jpg" alt="2">
+                    <img id="3" src="img/artMuseum/7.jpg" alt="3">
+                    <img id="4" src="img/artMuseum/8.jpg" alt="4">
+                </div>
+                <script>
+                    var imgPrincipal = document.querySelector("#principal_museo");
+                    var minis = document.querySelectorAll(".museo img");
+                    var opacity = 0.5;
+                    minis[0].style.opacity = opacity;
+                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                   
+                    function imgActivada(e){
+                   
+                    minis.forEach(img => (img.style.opacity = 1));
+                    imgPrincipal.src = e.target.src;
+                    imgPrincipal.classList.add("fade-in"); 
+                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
+                    e.target.style.opacity = opacity;
+                    }
+                </script>
                 <h4>Art Museum</h4>
                 <p>Un museo como un espacio de encuentro y observación. Esta fue la premisa del proyecto arquitectónico del museo de arte contemporáneo. El mismo fue pensado como un lugar de permanencia y convivencia con el entorno inmediato.</p>
             </div>
             <div class="proyecto-modelo proyecto-posicion proyecto-barrio">
-                <img class="tamaño-imagen-impar" src="./img/proyecto_Barrio31.jpg" alt="viviendas">
-                <div class="imagenes-chicas">
-                    <img id="1" src="img/barrio31/0.jpg" alt="1" onclick="changeImage()">
-                    <img id="2" src="img/barrio31/1.jpg" alt="2" onclick="changeImage()">
-                    <img id="3" src="img/barrio31/2.jpg" alt="3" onclick="changeImage()">
-                    <img id="4" src="img/barrio31/3.jpg" alt="4" onclick="changeImage()">
-
-                    <script type="text/javascript" src="js/changeImage.js"></script>
-
+                <div class="panel-principal">
+                    <img id="principal_barrio" class="tamaño-imagen-impar" src="./img/proyecto_Barrio31.jpg" alt="viviendas">
                 </div>
+                <div class="imagenes-chicas barrio">
+                    <img id="1" src="img/barrio31/0.jpg" alt="1">
+                    <img id="2" src="img/barrio31/1.jpg" alt="2">
+                    <img id="3" src="img/barrio31/2.jpg" alt="3">
+                    <img id="4" src="img/barrio31/3.jpg" alt="4">
+                </div>
+                <script>
+                    var imgPrincipal = document.querySelector("#principal_barrio");
+                    var minis = document.querySelectorAll(".barrio img");
+                    var opacity = 0.5;
+                    minis[0].style.opacity = opacity;
+                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                   
+                    function imgActivada(e){
+                   
+                    minis.forEach(img => (img.style.opacity = 1));
+                    imgPrincipal.src = e.target.src;
+                    imgPrincipal.classList.add("fade-in"); 
+                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
+                    e.target.style.opacity = opacity;
+                    }
+                </script>
                 <h4>Viviendas Barrio 31</h4>
                 <p>Este Proyecto nace como respuesta al desafío que tienen las grandes ciudades del mundo: superar los contrastes sociales y urbanos para que todos sus habitantes puedan disfrutarlas. Se busca garantizar servicios básicos, viviendas adecuadas y mejoras en el acceso a la educación, la salud y el trabajo.</p>
             </div>
             <div class="proyecto-modelo proyecto-posicion proyecto-diagonalSur">
-                <img class="tamaño-imagen-par" src="./img/proyecto-diagonalsur.jpg" alt="diagonal sur">
-                <div class="imagenes-chicas">
-                    <img id="1" src="img/diagonalSur/1.jpg" alt="1" onclick="changeImage()">
-                    <img id="2" src="img/diagonalSur/2.jpg" alt="2" onclick="changeImage()">
-                    <img id="3" src="img/diagonalSur/3.jpg" alt="3" onclick="changeImage()">
-                 
-                    <script type="text/javascript" src="js/changeImage.js"></script>
-
+                <img id="principal_diagonal"class="tamaño-imagen-par" src="./img/proyecto-diagonalsur.jpg" alt="diagonal sur">
+                <div class="imagenes-chicas diagonal">
+                    <img id="1" src="img/diagonalSur/1.jpg" alt="1">
+                    <img id="2" src="img/diagonalSur/2.jpg" alt="2">
+                    <img id="3" src="img/diagonalSur/3.jpg" alt="3">
                 </div>
+                <script>
+                    var imgPrincipal = document.querySelector("#principal_diagonal");
+                    var minis = document.querySelectorAll(".diagonal img");
+                    var opacity = 0.5;
+                    minis[0].style.opacity = opacity;
+                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                   
+                    function imgActivada(e){
+                   
+                    minis.forEach(img => (img.style.opacity = 1));
+                    imgPrincipal.src = e.target.src;
+                    imgPrincipal.classList.add("fade-in"); 
+                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
+                    e.target.style.opacity = opacity;
+                    }
+                </script>
                 <h4>Diagonal Sur, CABA</h4>
                 <p>El área central de Buenos Aires es un sector de gran valor por donde se lo analice, dsede situarce la sede del Poder Ejecutivo de la Nación, edificios de administración, como así también monumentos, museos y centros de interés.</p>
             </div>
             <div class="proyecto-modelo proyecto-posicion proyecto-museoTandil">
-                <img class="tamaño-imagen-impar" src="../img/proyecto-museotandil.jpg" alt="Museo Tandil">
-                <div class="imagenes-chicas">
-                    <img id="1" src="img/tandil/0.JPG" alt="1" onclick="changeImage()">
-                    <img id="2" src="img/tandil/1.JPG" alt="2" onclick="changeImage()">
-                    <img id="3" src="img/tandil/2.JPG" alt="3" onclick="changeImage()">
-                    <img id="3" src="../img/proyecto-museotandil.jpg" alt="3" onclick="changeImage()">
-              
-                    <script type="text/javascript" src="js/changeImage.js"></script>
-
+                <img id="principal_tandil"class="tamaño-imagen-impar" src="../img/proyecto-museotandil.jpg" alt="Museo Tandil">
+                <div class="imagenes-chicas tandil">
+                    <img id="1" src="img/tandil/0.JPG" alt="1">
+                    <img id="2" src="img/tandil/1.JPG" alt="2">
+                    <img id="3" src="img/tandil/2.JPG" alt="3">
+                    <img id="3" src="../img/proyecto-museotandil.jpg" alt="3">
                 </div>
+                <script>
+                    var imgPrincipal = document.querySelector("#principal_tandil");
+                    var minis = document.querySelectorAll(".tandil img");
+                    var opacity = 0.5;
+                    minis[0].style.opacity = opacity;
+                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                   
+                    function imgActivada(e){
+                   
+                    minis.forEach(img => (img.style.opacity = 1));
+                    imgPrincipal.src = e.target.src;
+                    imgPrincipal.classList.add("fade-in"); 
+                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
+                    e.target.style.opacity = opacity;
+                    }
+                </script>
                 <h4>Museo Tandil</h4>
                 <p>Frente a la natural magnificencia de este privilegiado pedazo de tierra que es Tandil y siguiendo la idea de José Enrique Rodó que la excitación y el movimiento de la vida no es capaz de crear una aptitud que no tenga su principio en la espontaneidad de la naturaleza, se crea este museo.</p>
             </div>

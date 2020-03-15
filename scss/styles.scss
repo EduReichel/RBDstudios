@@ -137,8 +137,14 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
+    .inicio-nosotros h2{
+        font-size: 34px;
+    }
+.inicio-nosotros p {
+    width:600px;
+    font-size: 18px;
+    }
 
 /*CAROUSEL PROYECTOS*/
 

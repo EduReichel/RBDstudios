@@ -6,10 +6,11 @@
    }
    
    .contenedor-contacto .caja {
-       height: 400px;
-       width: 550px;
-       background-image: url(../img/rbd_contacto.jpg);
-       background-size: cover;
+        background-image: url(../img/rbd_contacto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        height: 300px;
        filter: grayscale(0.7);
    }
    

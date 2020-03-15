@@ -116,6 +116,13 @@ a {
   justify-content: center;
   align-items: center; }
 
+.inicio-nosotros h2 {
+  font-size: 34px; }
+
+.inicio-nosotros p {
+  width: 600px;
+  font-size: 18px; }
+
 /*CAROUSEL PROYECTOS*/
 .inicio-proyectos {
   margin-top: 30px; }
@@ -143,3 +150,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+
+/*--------------------------MediaQuery-----------------------------*/
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red; } }
