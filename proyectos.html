@@ -48,28 +48,28 @@
         <div class="img-proyectos">
             <div class="proyecto-modelo proyecto-posicion proyecto-museo">
                 <div class="panel-principal">
-                    <img id="principal_museo" class="museo tamaño-imagen-par" src="./img/proyecto_artMusem.jpg" alt="museo">
+                    <img id="seleccion" class="museo tamaño-imagen-par" src="./img/proyecto_artMusem.jpg" alt="museo">
                 </div>
-                <div class="imagenes-chicas museo">
-                    <img id="1" src="img/artMuseum/5.jpg" alt="1">
-                    <img id="2" src="img/artMuseum/6.jpg" alt="2">
-                    <img id="3" src="img/artMuseum/7.jpg" alt="3">
-                    <img id="4" src="img/artMuseum/8.jpg" alt="4">
+                <div class="mini imagenes-chicas museo">
+                    <img src="img/artMuseum/5.jpg" alt="1">
+                    <img src="img/artMuseum/6.jpg" alt="2">
+                    <img src="img/artMuseum/7.jpg" alt="3">
+                    <img src="img/artMuseum/8.jpg" alt="4">
                 </div>
                 <script>
-                    var imgPrincipal = document.querySelector("#principal_museo");
-                    var minis = document.querySelectorAll(".museo img");
+                    var imgPrincipalCero = document.querySelector("#seleccion");
+                    var mini = document.querySelectorAll(".mini img");
                     var opacity = 0.5;
-                    minis[0].style.opacity = opacity;
-                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                    mini[0].style.opacity = opacity;
+                    mini.forEach(img => img.addEventListener("click", imgActivada0));
                    
-                    function imgActivada(e){
+                    function imgActivada0(e){
                    
-                    minis.forEach(img => (img.style.opacity = 1));
-                    imgPrincipal.src = e.target.src;
-                    imgPrincipal.classList.add("fade-in"); 
-                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
-                    e.target.style.opacity = opacity;
+                        mini.forEach(img => (img.style.opacity = 1));
+                        imgPrincipalCero.src = e.target.src;
+                        imgPrincipalCero.classList.add("fade-in"); 
+                        setTimeout(() => imgPrincipalCero.classList.remove("fade-in"), 500); 
+                        e.target.style.opacity = opacity;
                     }
                 </script>
                 <h4>Art Museum</h4>
@@ -77,81 +77,82 @@
             </div>
             <div class="proyecto-modelo proyecto-posicion proyecto-barrio">
                 <div class="panel-principal">
-                    <img id="principal_barrio" class="tamaño-imagen-impar" src="./img/proyecto_Barrio31.jpg" alt="viviendas">
+                    <img id="selecta" class="tamaño-imagen-impar" src="./img/proyecto_Barrio31.jpg" alt="viviendas">
                 </div>
                 <div class="imagenes-chicas barrio">
-                    <img id="1" src="img/barrio31/0.jpg" alt="1">
-                    <img id="2" src="img/barrio31/1.jpg" alt="2">
-                    <img id="3" src="img/barrio31/2.jpg" alt="3">
-                    <img id="4" src="img/barrio31/3.jpg" alt="4">
+                    <img src="img/barrio31/0.jpg" alt="1">
+                    <img src="img/barrio31/1.jpg" alt="2">
+                    <img src="img/barrio31/2.jpg" alt="3">
+                    <img src="img/barrio31/3.jpg" alt="4">
                 </div>
                 <script>
-                    var imgPrincipal = document.querySelector("#principal_barrio");
+                    var imgPrincipal = document.querySelector("#selecta");
                     var minis = document.querySelectorAll(".barrio img");
                     var opacity = 0.5;
                     minis[0].style.opacity = opacity;
-                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                    minis.forEach(img => img.addEventListener("click", imgActivada1));
                    
-                    function imgActivada(e){
+                    function imgActivada1(e){
                    
-                    minis.forEach(img => (img.style.opacity = 1));
-                    imgPrincipal.src = e.target.src;
-                    imgPrincipal.classList.add("fade-in"); 
-                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
-                    e.target.style.opacity = opacity;
+                        minis.forEach(img => (img.style.opacity = 1));
+                        imgPrincipal.src = e.target.src;
+                        imgPrincipal.classList.add("fade-in"); 
+                        setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
+                        e.target.style.opacity = opacity;
                     }
                 </script>
                 <h4>Viviendas Barrio 31</h4>
                 <p>Este Proyecto nace como respuesta al desafío que tienen las grandes ciudades del mundo: superar los contrastes sociales y urbanos para que todos sus habitantes puedan disfrutarlas. Se busca garantizar servicios básicos, viviendas adecuadas y mejoras en el acceso a la educación, la salud y el trabajo.</p>
             </div>
             <div class="proyecto-modelo proyecto-posicion proyecto-diagonalSur">
-                <img id="principal_diagonal"class="tamaño-imagen-par" src="./img/proyecto-diagonalsur.jpg" alt="diagonal sur">
-                <div class="imagenes-chicas diagonal">
-                    <img id="1" src="img/diagonalSur/1.jpg" alt="1">
-                    <img id="2" src="img/diagonalSur/2.jpg" alt="2">
-                    <img id="3" src="img/diagonalSur/3.jpg" alt="3">
+                <div class="panel-principal">
+                    <img id="selecta2"class="tamaño-imagen-par" src="./img/proyecto-diagonalsur.jpg" alt="diagonal sur">
+                </div>
+                <div class="mini2 imagenes-chicas diagonal">
+                    <img src="img/diagonalSur/1.jpg" alt="1">
+                    <img src="img/diagonalSur/2.jpg" alt="2">
+                    <img src="img/diagonalSur/3.jpg" alt="3">
                 </div>
                 <script>
-                    var imgPrincipal = document.querySelector("#principal_diagonal");
-                    var minis = document.querySelectorAll(".diagonal img");
-                    var opacity = 0.5;
-                    minis[0].style.opacity = opacity;
-                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                    var imgPrincipal2 = document.querySelector("#selecta2");
+                    var mini2 = document.querySelectorAll(".mini2 img");
+                                 
+                    mini2.forEach(img => img.addEventListener("click", imgActivada2));
                    
-                    function imgActivada(e){
+                    function imgActivada2(e){
                    
-                    minis.forEach(img => (img.style.opacity = 1));
-                    imgPrincipal.src = e.target.src;
-                    imgPrincipal.classList.add("fade-in"); 
-                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
-                    e.target.style.opacity = opacity;
+                        mini2.forEach(img => (img.style.opacity = 1));
+                        imgPrincipal2.src = e.target.src;
+                        imgPrincipal2.classList.add("fade-in"); 
+                        setTimeout(() => imgPrincipal2.classList.remove("fade-in"), 500); 
+                        e.target.style.opacity = opacity;
                     }
                 </script>
                 <h4>Diagonal Sur, CABA</h4>
                 <p>El área central de Buenos Aires es un sector de gran valor por donde se lo analice, dsede situarce la sede del Poder Ejecutivo de la Nación, edificios de administración, como así también monumentos, museos y centros de interés.</p>
             </div>
             <div class="proyecto-modelo proyecto-posicion proyecto-museoTandil">
-                <img id="principal_tandil"class="tamaño-imagen-impar" src="../img/proyecto-museotandil.jpg" alt="Museo Tandil">
-                <div class="imagenes-chicas tandil">
-                    <img id="1" src="img/tandil/0.JPG" alt="1">
-                    <img id="2" src="img/tandil/1.JPG" alt="2">
-                    <img id="3" src="img/tandil/2.JPG" alt="3">
-                    <img id="3" src="../img/proyecto-museotandil.jpg" alt="3">
+                <img id="selecta3"class="tamaño-imagen-impar" src="../img/proyecto-museotandil.jpg" alt="Museo Tandil">
+                <div class="mini3 imagenes-chicas tandil">
+                    <img src="img/tandil/0.JPG" alt="1">
+                    <img src="img/tandil/1.JPG" alt="2">
+                    <img src="img/tandil/2.JPG" alt="3">
+                    <img src="img/tandil/3.jpg" alt="4">
                 </div>
                 <script>
-                    var imgPrincipal = document.querySelector("#principal_tandil");
-                    var minis = document.querySelectorAll(".tandil img");
+                    var imgPrincipal3 = document.querySelector("#selecta3");
+                    var mini3 = document.querySelectorAll(".mini3 img");
                     var opacity = 0.5;
-                    minis[0].style.opacity = opacity;
-                    minis.forEach(img => img.addEventListener("click", imgActivada));
+                    mini[0].style.opacity = opacity;
+                    mini3.forEach(img => img.addEventListener("click", imgActivada3));
                    
-                    function imgActivada(e){
+                    function imgActivada3(e){
                    
-                    minis.forEach(img => (img.style.opacity = 1));
-                    imgPrincipal.src = e.target.src;
-                    imgPrincipal.classList.add("fade-in"); 
-                    setTimeout(() => imgPrincipal.classList.remove("fade-in"), 500); 
-                    e.target.style.opacity = opacity;
+                        mini3.forEach(img => (img.style.opacity = 1));
+                        imgPrincipal3.src = e.target.src;
+                        imgPrincipal3.classList.add("fade-in"); 
+                        setTimeout(() => imgPrincipal3.classList.remove("fade-in"), 500); 
+                        e.target.style.opacity = opacity;
                     }
                 </script>
                 <h4>Museo Tandil</h4>

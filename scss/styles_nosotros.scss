@@ -27,3 +27,49 @@ main {
         margin-top: 30px;
         margin-bottom: 15px;
         filter: grayscale(0.5);}
+    .mobile {
+        display: none;
+    }
+
+/*MOBILE*/
+       
+@media only screen and (max-width: 600px){  
+    body{
+        height: 100%;
+    }
+    .contenedor .titulos {
+        margin-top: 20px;
+    }
+    
+    main {
+        display: wrap;
+        flex-wrap: wrap;
+     }
+        main .valores{
+            width: 100%;
+            margin-top: 10px;
+        }
+        main .valores section {
+            padding-right: 10px;
+        }
+        .mobile {
+            display: block;
+        }
+        .pc {
+            display: none;}
+        .mobile{
+            width: auto;}
+        .mobile img {
+            width: 100%;
+        height: 500px;
+        }
+        .valores{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;}
+        .imagenValores{
+            margin-top: 30px;
+            margin-bottom: 15px;
+            filter: grayscale(0.5);}
+}

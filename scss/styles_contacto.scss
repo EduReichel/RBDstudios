@@ -76,7 +76,7 @@
       }
 
       .formButton:hover {
-        background-color: black;
+        background-color: #6c6c6c;
         color:#ffffff;
     }
     input:focus {
@@ -93,3 +93,11 @@
         background-color: white;
         clear: both;
     }
+
+    
+@media only screen and (max-width: 600px){  
+
+    .form-position input {
+       width: auto;
+    }
+}
